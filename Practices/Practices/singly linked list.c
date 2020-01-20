@@ -1,12 +1,9 @@
-//=========== 2020.01.07. ==============
+//=========== 2020.01.17. ==============
 // - c Language  
 // - doubly linked list
 //====================================
 
 #include <stdio.h>
-#include <stdlib.h>
-
-//struct Node;
 
 typedef struct _Node
 {
