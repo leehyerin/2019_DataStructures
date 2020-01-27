@@ -1,38 +1,42 @@
 /*
 M이상 N이하의 소수를 모두 출력하는 프로그램을 작성하시오.
+::에라토스테네스의 체 (Sieve of Eratosthenes)
 */
-
 #include <iostream>
-#include <math.h>
-
-int CheckPrime(int);
+#include <cstring>
 
 int main(void)
 {
-	int m, n, t{ 0 };
+	int m, n;
 
-	std::cin >> m >> n;
+	scanf("%d %d", &m, &n);
 
-	for (int i = m; i <= n; ++i)
+	bool* prime = new bool[n + 1];
+	memset(prime, false, sizeof(prime));
+
+	if (m == 1)
 	{
-		t = CheckPrime(i);
+		prime[1] = true;
+	}
 
-		if (t != 0) std::cout << t << std::endl;
+	for (int mul = 2; mul*mul <= n; ++mul) 
+	{
+		for (int k = mul * mul; k <= n; k += mul) //mul의 배수를 체로 거른다. 
+		{
+			if (prime[k] == false)
+			{
+				prime[k] = true;
+			}
+		}
+	}
+	
+	for (int k = m; k <= n; ++k)
+	{
+		if (!prime[k])
+		{
+			std::cout << k << "\n";
+		}
 	}
 
 	return 0;
-}
-
-int CheckPrime(int num)
-{
-	if (num == 1) return 0;
-
-	for (int i = 2; i <= sqrt(num); ++i)
-	{
-		if (num % i == 0) // 소수가 아니라면
-		{
-			return 0;
-		}
-	}
-	return num; //소수라면
 }
