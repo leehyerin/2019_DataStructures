@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BaekJoon2749.cpp">
+    <ClCompile Include="Sorting\BaekJoon2751.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
