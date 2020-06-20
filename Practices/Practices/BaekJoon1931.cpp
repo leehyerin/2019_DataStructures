@@ -13,7 +13,7 @@ struct Meeting
 
 void printf(const vector<Meeting>&);
 
-int cmp(const Meeting a, const Meeting b)
+int cmp(const Meeting& a, const Meeting& b)
 {
 	if (a.end == b.end)
 		return a.start < b.start;  // 작은 순서대로
@@ -30,7 +30,7 @@ int main(void)
 	vector<Meeting> meetings(N);
 
 	for (int i = 0; i < N; ++i)
-		std::cin >> meetings[i].start >> meetings[i].end;
+		cin >> meetings[i].start >> meetings[i].end;
 	
 	//sort
 	sort(meetings.begin(), meetings.end(),cmp);
