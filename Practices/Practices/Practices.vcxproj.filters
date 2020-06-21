@@ -15,22 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BaekJoon9626.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="BaekJoon1931.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="BaekJoon11399.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="random.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="BaekJoon11399.cpp">
+    <ClCompile Include="BaekJoon3079.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="random.cpp">
+    <ClCompile Include="BaekJoon1920.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
