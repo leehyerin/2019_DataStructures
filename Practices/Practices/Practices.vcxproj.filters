@@ -15,16 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BaekJoon11399.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="random.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="BaekJoon3079.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="BaekJoon1920.cpp">
+    <ClCompile Include="Search\Binary Search\BaekJoon2792.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
