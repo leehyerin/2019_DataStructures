@@ -9,6 +9,9 @@ int color[300000];
 
 int main(void) 
 {
+	ios_base::sync_with_stdio(false);
+	cin.tie(0);
+
 	unsigned int N, M; //N-아이들의 수, M-색상의 수  (1 ≤ N ≤ 10^9, 1 ≤ M ≤ 300,000, M ≤ N)
 
 
